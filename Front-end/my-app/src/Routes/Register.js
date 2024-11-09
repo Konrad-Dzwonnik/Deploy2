@@ -34,7 +34,7 @@ const Register = () => {
     e.preventDefault();
     try {
       // const response = await axios.post('http://localhost:3001/register', {
-        const response = await axios.post('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/register', {
+        const response = await axios.post('https://back-enddeployment.onrender.com/register', {
         _id,
         firstName,
         lastName,

@@ -81,7 +81,9 @@ app.use(cors({
     'https://group-project-gwdp-wednesday-5pm-idk-how-4bid.onrender.com', 
     'https://group-project-gwdp-wednesday-5pm-idk-how-djw7.onrender.com', 
     'https://group-project-gwdp-wednesday-5pm-idk-how-b10i.onrender.com',
-    'https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com'],
+    'https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com',
+    'https://deploy2-en89.onrender.com',
+    'https://back-enddeployment.onrender.com'],
   credentials: true,
 }
 

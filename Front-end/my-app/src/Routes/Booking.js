@@ -13,7 +13,7 @@ const BookingPage = () => {
         if (sitterId) {
             const fetchAvailability = async () => {
                 try {
-                    const response = await axios.get('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/sitters/${sitterId}/availability');
+                    const response = await axios.get('https://back-enddeployment.onrender.com/sitters/${sitterId}/availability');
                     //const response = await axios.get(`http://localhost:3001/sitters/${sitterId}/availability`);
                     // You can set availability if you want to display it, but it's not mandatory
                 } catch (error) {
@@ -34,7 +34,7 @@ const BookingPage = () => {
 
             // Send booking request to backend
            // await axios.post('http://localhost:3001/bookings', bookingData);
-           await axios.post('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/bookings', bookingData);
+           await axios.post('https://back-enddeployment.onrender.com/bookings', bookingData);
             alert('Booking successful!');
             navigate('/confirmation'); // Navigate to confirmation page after successful booking
         } catch (error) {

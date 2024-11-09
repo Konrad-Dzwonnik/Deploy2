@@ -15,7 +15,7 @@ const MessagePage = () => {
     const fetchMessages = async () => {
       try {
         // const response = await axios.get(`http://localhost:3001/messages/${userId}/${sitterId}`);
-        const response = await axios.get(`https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/messages/${userId}/${sitterId}`);
+        const response = await axios.get(`https://back-enddeployment.onrender.com/messages/${userId}/${sitterId}`);
         setMessages(response.data);
       } catch (error) {
         console.error('Error fetching messages:', error);
@@ -37,7 +37,7 @@ const MessagePage = () => {
 
     try {
       // await axios.post('http://localhost:3001/sendMessage', messageData);
-      await axios.post('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/sendMessage', messageData);
+      await axios.post('https://back-enddeployment.onrender.com/sendMessage', messageData);
       setMessages([...messages, messageData]);
       setNewMessage('');
     } catch (error) {

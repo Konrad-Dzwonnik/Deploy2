@@ -16,11 +16,11 @@ const SitterDetails = () => {
     const fetchSitterDetails = async () => {
       try {
         // const response = await axios.get(`http://localhost:3001/FindSitter/${id}`);
-        const response = await axios.get(`https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/FindSitter/${id}`);
+        const response = await axios.get(`https://back-enddeployment.onrender.com/FindSitter/${id}`);
         setSitter(response.data);
         // Fetch reviews for this sitter
         // const reviewsResponse = await axios.get(`http://localhost:3001/reviews/${id}`);
-        const reviewsResponse = await axios.get(`https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/reviews/${id}`);
+        const reviewsResponse = await axios.get(`https://back-enddeployment.onrender.com/reviews/${id}`);
         setReviews(reviewsResponse.data);
       } catch (error) {
         console.error('Error fetching sitter details:', error);
@@ -48,7 +48,7 @@ const SitterDetails = () => {
   
     try {
       // const response = await axios.post(`http://localhost:3001/reviews`, {
-        const response = await axios.post(`https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/reviews`, {
+        const response = await axios.post(`https://back-enddeployment.onrender.com/reviews`, {
         sitterId: sitter._id,
         rating,
         comment
@@ -79,7 +79,7 @@ const SitterDetails = () => {
         {sitter.image && (
           <img
             // src={`http://localhost:3001/FindSitter/image/${sitter._id}`}
-            src={`https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/FindSitter/image/${sitter._id}`}
+            src={`https://back-enddeployment.onrender.com/FindSitter/image/${sitter._id}`}
             alt={`${sitter.firstName} ${sitter.lastName}`}
             className="sitter2-image"
           />

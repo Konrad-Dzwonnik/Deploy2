@@ -15,7 +15,7 @@ const ProfilePage = () => {
         // const response = await axios.get('http://localhost:3001/Profile', { 
         //   withCredentials: true 
         // });
-        const response = await axios.get('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/Profile', { 
+        const response = await axios.get('https://back-enddeployment.onrender.com/Profile', { 
           withCredentials: true 
         });
         setUser(response.data);

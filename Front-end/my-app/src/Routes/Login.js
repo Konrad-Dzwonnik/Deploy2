@@ -23,7 +23,7 @@ const LoginPage = () => {
     e.preventDefault();
     try {
       // const response = await axios.post('http://localhost:3001/login', {_id, password});
-      const response = await axios.post('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/login', {_id, password});
+      const response = await axios.post('https://back-enddeployment.onrender.com/login', {_id, password});
       // Store the token in Cookies
       const { SESSION } = response.data;
       Cookies.set('SESSION', SESSION);

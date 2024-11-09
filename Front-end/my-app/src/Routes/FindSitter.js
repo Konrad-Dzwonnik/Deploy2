@@ -17,12 +17,12 @@ const FindSitterPage = () => {
     const fetchSitters = async () => {
       try {
        // const response = await axios.get('http://localhost:3001/FindSitter');
-       const response = await axios.get('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/FindSitter');
+       const response = await axios.get('https://back-enddeployment.onrender.com/FindSitter');
         const sittersWithRatings = await Promise.all(
           response.data.map(async (sitter) => {
             // Fetch the average rating for each sitter
             //const reviewsResponse = await axios.get(`http://localhost:3001/reviews/${sitter._id}`);
-            const reviewsResponse = await axios.get('https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/reviews/${sitter._id}');
+            const reviewsResponse = await axios.get('https://back-enddeployment.onrender.com/reviews/${sitter._id}');
             const averageRating =
               reviewsResponse.data.length > 0
                 ? reviewsResponse.data.reduce((sum, review) => sum + review.rating, 0) / reviewsResponse.data.length
@@ -105,7 +105,7 @@ const FindSitterPage = () => {
               {sitter.image && (
                 <img
                   //src={`http://localhost:3001/FindSitter/image/${sitter._id}`}
-                  src={'https://group-project-gwdp-wednesday-5pm-idk-how-cx5n.onrender.com/image/${sitter._id}'}
+                  src={'https://back-enddeployment.onrender.com/image/${sitter._id}'}
                   alt={`${sitter.firstName} ${sitter.lastName}`}
                   className="sitter-image"
                 />
