@@ -1,0 +1,10 @@
+export { default as AboutPage } from './About';
+export { default as LoginPage } from './Login';
+export { default as ProfilePage } from './Profile';
+export { default as HomePage } from './Home';
+export { default as BecomeSitterPage } from './BecomeSitter';
+export { default as FindSitterPage } from './FindSitter';
+export { default as RegisterPage } from './Register';
+export { default as SitterDetailsPage } from './SitterDetails';
+export { default as BookingPage } from './Booking'
+export { default as AddAvailabilityForm } from './AddAvailability'
